@@ -52,10 +52,10 @@ function SavedQuoteScreen() {
               borderColor: 'grey',
             }}
           >
-            <Text style={{ color: 'white' }}>
+            <Text>
               {i + 1} - Author: {q.author}
             </Text>
-            <Text style={{ color: 'white' }}>Quote: {q.body}</Text>
+            <Text>Quote: {q.body}</Text>
           </Pressable>
         ))}
         <PressableButton

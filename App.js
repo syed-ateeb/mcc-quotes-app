@@ -30,7 +30,7 @@ export default function App() {
     <AppearanceProvider>
       <View style={{ flex: 1 }}>
         <StatusBar style="auto" />
-        <NavigationContainer theme={DarkTheme}>
+        <NavigationContainer>
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen
               options={{ headerShown: false }}

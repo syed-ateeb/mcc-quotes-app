@@ -1,6 +1,5 @@
 import React from 'react';
 import { Modal, View, Text, StyleSheet } from 'react-native';
-import { DefaultTheme } from '@react-navigation/native';
 
 function LoadingModal({ loadingMessage, transparent = true }) {
   return (
@@ -20,10 +19,10 @@ const style = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.9)',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
   },
   loadingText: {
     fontSize: 30,
-    color: DefaultTheme.colors.primary,
+    color: 'green',
   },
 });

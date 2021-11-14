@@ -7,9 +7,7 @@ function TabBarIcon(props) {
     <Ionicons
       name={props.name}
       size={27}
-      color={
-        props.focused ? DefaultTheme.colors.primary : DefaultTheme.colors.border
-      }
+      color={props.focused ? 'green' : DefaultTheme.colors.border}
     />
   );
 }

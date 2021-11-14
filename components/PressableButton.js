@@ -20,10 +20,8 @@ export default PressableButton;
 const style = StyleSheet.create({
   pressable: pressed => {
     return {
-      backgroundColor: pressed
-        ? DefaultTheme.colors.text
-        : DefaultTheme.colors.primary,
-      borderColor: DefaultTheme.colors.primary,
+      backgroundColor: pressed ? DefaultTheme.colors.card : 'green',
+      borderColor: 'green',
       borderWidth: 1,
       display: 'flex',
       justifyContent: 'center',
@@ -35,7 +33,7 @@ const style = StyleSheet.create({
   },
   pressableText: pressed => {
     return {
-      color: pressed ? DefaultTheme.colors.primary : DefaultTheme.colors.card,
+      color: pressed ? 'green' : DefaultTheme.colors.card,
     };
   },
 });

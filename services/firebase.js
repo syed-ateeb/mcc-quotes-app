@@ -23,10 +23,15 @@ const auth = firebase.auth(app);
 const db = firebase.firestore(app);
 
 const saveQuoteToFirebase = async quote => {
-  const { quote: quotes } = await loadQuotesFromFirebase();
-  for (let i = 0; i < quotes.length; i++) {
-    if (quotes[i] === quote) return;
-  }
+  let quotes = [];
+  try {
+    const x = await loadQuotesFromFirebase();
+    quotes = x.quote;
+    for (let i = 0; i < quotes.length; i++) {
+      if (quotes[i] === quote) return;
+    }
+  } catch (err) {}
+
   await db
     .collection('quotes')
     .doc(auth.currentUser.email)

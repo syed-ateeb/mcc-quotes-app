@@ -1,4 +1,3 @@
-import { DefaultTheme } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import { TouchableWithoutFeedback, View, Text, StyleSheet } from 'react-native';
@@ -66,7 +65,7 @@ const style = StyleSheet.create({
     padding: 10,
   },
   textStyle: {
-    color: DefaultTheme.colors.card,
+    color: 'black',
     padding: 5,
   },
 });
